@@ -75,7 +75,7 @@ killall Finder
 defaults write com.apple.dock tilesize -int 42
 
 # Lock the Dock size
-defaults write com.apple.dock size-immutable -bool true
+defaults write com.apple.dock size-immutable -bool false
 
 # Dock magnification
 defaults write com.apple.dock magnification -bool false
@@ -87,7 +87,7 @@ defaults write com.apple.dock mineffect -string 'scale'
 defaults write NSGlobalDomain AppleWindowTabbingMode -string 'always'
 
 # Dock orientation: 'left', 'bottom', 'right'
- defaults write com.apple.dock 'orientation' -string 'right'
+ defaults write com.apple.dock 'orientation' -string 'bottom'
 
 # Dock pinning: 'start', 'middle', 'end'
 # defaults write com.apple.dock pinning -string 'middle'
@@ -198,11 +198,11 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "lars-mbp-14"
-sudo scutil --set HostName "lars-mbp-14"
-sudo scutil --set LocalHostName "lars-mbp-14"
+sudo scutil --set ComputerName "florianbuth"
+sudo scutil --set HostName "florianbuth"
+sudo scutil --set LocalHostName "florianbuth"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server \
-   NetBIOSName -string "lars-mbp-14"
+   NetBIOSName -string "florianbuth"
 
 ###############################################################################
 # Security & Privacy
