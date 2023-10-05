@@ -5,7 +5,7 @@
 Quick installation guide, backs up original dot files and stores them out of the way in a git ignored directory.
 
 ```bash
-git clone git@github.com:LarsEckart/dotfiles.git ~/.dotfiles
+git clone git@github.com:florianbuth-sympower/dotfiles.git ~/.dotfiles
 mv ~/.bash_profile ~/.dotfiles/backups/
 mv ~/.bashrc ~/.dotfiles/backups/
 mv ~/.gitconfig ~/.dotfiles/backups/
