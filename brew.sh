@@ -85,16 +85,16 @@ brew install grype
 
 # Apps
 
-# brew install --cask rectangle
+brew install --cask rectangle
 # brew install --cask maccy
-# brew install --cask iterm2
-# brew install --cask fork
+brew install --cask iterm2
+brew install --cask fork
 # brew install --cask jetbrains-toolbox
-# brew install --cask visual-studio-code
+brew install --cask visual-studio-code
 # brew install --cask the-unarchiver
 # brew install --cask firefox
 # brew install --cask anydesk
-# brew install --cask cakebrew
+brew install --cask cakebrew
 # brew install --cask gpg-suite
 #brew install --cask jdiskreport
 # brew install --cask obs

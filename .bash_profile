@@ -1,6 +1,8 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -47,3 +49,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+# run scripts from within scripts directory without providing full path
+export PATH="/Users/florianbuth/scripts:$PATH"

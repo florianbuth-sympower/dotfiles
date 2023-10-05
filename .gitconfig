@@ -30,16 +30,7 @@
 	changed = green
 	untracked = cyan
 [include]
-	path = ~/.dotfiles/.gitconfig-personal
-[includeIf "gitdir/i:~/work/"]
-    path = ~/.dotfiles/.gitconfig-work
-[user]
-	# But if, say, you want Git to use one email address for your open source projects and a different one for your work projects, you’ve undoubtedly 
-	# made the mistake of committing to a new Git repository without having first set your email address in that repository. 
-	# In this situation, Git emits a warning, but it creates the commit anyway, using an email address that it guesses from the local system hostname. 
-	# If you’re trying to do something as complicated as different addresses for different projects, this is almost certainly not what you want.
-	# Now you can tell Git not to guess, but rather to insist that you set user.name and user.email explicitly before it will let you commit:
-	useConfigOnly = true
+	path = ~/.dotfiles/.gitconfig-work
 [diff]
 	# https://git-scm.com/docs/git-config#git-config-diffrenames
 	# Whether and how Git detects renames. If set to "false", rename detection is disabled. 
@@ -65,3 +56,11 @@
 	prune = true
 [push]
 	autoSetupRemote = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/florianbuth/.stCommitMsg
